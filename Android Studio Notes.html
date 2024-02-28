@@ -97,7 +97,7 @@
 
         a {
             text-decoration: none;
-            color: rgb(120, 116, 199);
+            color: rgb(237, 231, 255);
         }
 
         /* Scroll Bar */
@@ -342,10 +342,12 @@ Toast.makeText(MainActivity.this, "Hello User", Toast.LENGTH_SHORT).show();
 
     <h3>How to make Button</h3>
     <hr>
-    <pre style="border-left: 6px solid #ffff00;">Note: Befor doing anything dom't forget add <b>import</b><br>Example: <b>import android.widget.Toast;</b></pre>
+    <pre
+        style="border-left: 6px solid #ffff00;">Note: Befor doing anything dom't forget add <b>import</b><br>Example: <b>import android.widget.Toast;</b></pre>
     <p><b>FIRST WAY: </b></p>
 
-    <p>First make a variable declaration</p>
+    <p>First make a <b>button</b> on XML</p>
+    <p>Then make a variable declaration in java</p>
 
     <pre style="line-height: 0.6;">
         <code class="language-java">
@@ -380,7 +382,8 @@ button.setOnClickListener(new View.OnClickListener() {
 
     <p><b>SECOND WAY:</b></p>
 
-    <p>First set <b>onClick</b> on xml file and named it, then use this function in java</p>
+    <p>First make a <b>button</b> on XML</p>
+    <p>then set <b>onClick</b> on xml file and named it, then use this function in java</p>
 
     <pre>
         <code class="language-java">
@@ -395,7 +398,8 @@ public void Action(View view){
     <hr>
     <p>To get text from Edittext and show Textview use this code</p>
     <pre style="border-left: 6px solid #ffff00;">Note: Befor doing this make Edittext and Textview in XML file</pre>
-    <p>First make a variable declaration:</p>
+    <p>First make a <b>Textview and Edittext</b> on XML</p>
+    <p>then make a variable declaration:</p>
 
     <pre>
         <code class="language-java">
@@ -438,18 +442,21 @@ Log.e("error", "This function is not working");
     <h3>Activities & Layouts</h3>
     <hr>
 
-    <p>Each activity corresponds to a single thing users can do. To put it plainly, an activity equals a screen, and each activity contains layouts.</p>
+    <p>Each activity corresponds to a single thing users can do. To put it plainly, an activity equals a screen, and
+        each activity contains layouts.</p>
 
     <p><b>Types of Layouts in Android:</b></p>
 
     <p>LinearLayout, ConstraintLayout, etc...</p>
 
-    <pre style="border-left: 6px solid #ffff00;">Note: Strings.xml file This file contains string resources in XML format</pre>
+    <pre
+        style="border-left: 6px solid #ffff00;">Note: Strings.xml file This file contains string resources in XML format</pre>
 
     <h3>Multiscreen & Intent</h3>
     <hr>
 
-    <p><b>Intent:</b> A mechanism in Android that enables communication between different components of an application or between different applications, facilitating actions and data transfer.</p>
+    <p><b>Intent:</b> A mechanism in Android that enables communication between different components of an application
+        or between different applications, facilitating actions and data transfer.</p>
 
     <p><b>Types of Intents:</b></p>
 
@@ -459,24 +466,67 @@ Log.e("error", "This function is not working");
 
     <br>
     <p><b>How to make a Activity2.java</b> (Basicly second screen)</p>
-    
+
     <P>Three line > File > New > Activity > Basic Views Activity</P>
 
     <br>
     <p>Explicit Intent Ecample: </p>
 
-    <pre style="border-left: 6px solid #ffff00;">For Example check: <a href="#" target="_blank">Click here</a></pre>
+    <pre
+        style="border-left: 6px solid #ffff00;">For Example: <a href="https://github.com/Azim-me/Android-Studio/tree/main/08%20Multiscreen%20app%20(Explicit%20intent)" target="_blank">Click here</a></pre>
 
     <p>Implicit Intent Ecample: </p>
 
-    <pre style="border-left: 6px solid #ffff00;">For Example check: <a href="#" target="_blank">Click here</a></pre>
+    <pre
+        style="border-left: 6px solid #ffff00;">For Example: <a href="https://github.com/Azim-me/Android-Studio/tree/main/09%20URL%20App%20(Implicit%20Intent)" target="_blank">Click here</a></pre>
 
-    <pre style="border-left: 6px solid #ffff00;">common intents android documentation: <a href="https://developer.android.com/guide/components/intents-common" target="_blank">Click here</a></pre>
+    <pre
+        style="border-left: 6px solid #ffff00;">common intents android documentation: <a href="https://developer.android.com/guide/components/intents-common" target="_blank">Click here</a></pre>
+
+    <h3>ListViews & RecyclerView</h3>
+    <hr>
+
+    <p><b>BUILT IN LISTVIEWS:</b></p>
+
+    <p>First make a <b>listview</b> in XML</p>
+    <p>Then make a variable declaration:</p>
+
+    <pre style="line-height: 0.6;">
+        <code class="language-java">
+ListView listView;
+        </code>
+    </pre>
+
+    <p>Then use this code: </p>
+
+    <pre>
+        <code class="language-java">
+listView = findViewById(R.id.listview);
+ArrayAdapter adp = new ArrayAdapter(this, android.R.layout.simple_list_item_1, arr);
+listView.setAdapter(adp);
+// Here arr is my won String array
+        </code>
+    </pre>
+
+    <p><b>CUSTAM LISTVIEWS:</b></p>
+
+
+
+
+    <h3>Web Androaid App</h3>
+    <hr>
+    <p>Xml file:</p>
+
+    <pre>
+        <code class="language-java">
+
+        </code>
+    </pre>
 
     <footer>
-        <br><br><br><br>
+        <br><br><br>
         <hr style="opacity: 0.2;">
-        <h5>DOCUMENTED BY SK AZIM</h5>
+        <h5><a href="https://github.com/Azim-me/Android-Studio" target="_blank">DOCUMENTED BY SK AZIM</a></h5>
         <hr style="opacity: 0.2;">
     </footer>
 
